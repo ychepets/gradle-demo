@@ -1,17 +1,15 @@
 package com.demo;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class SimpleTest {
-    @BeforeTest
+    @BeforeClass
     public void setUp() {
         String name = new Object(){}.getClass().getEnclosingMethod().getName();
         System.out.println(name);
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown() {
         String name = new Object(){}.getClass().getEnclosingMethod().getName();
         System.out.println(name);

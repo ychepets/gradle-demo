@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="1">
+    <parameter name="login" value="admin"/>
+    <parameter name="password" value="qwerty"/>
+    <test name="ClassOneTest">
+        <groups>
+            <run>
+                <include name="group1" />
+                <include name="group2" />
+                <exclude name="excludeTest" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.demo.ClassOneTest" />
+        </classes>
+    </test>
+    <test name="ClassTwoTest">
+        <classes>
+            <class name="com.demo.ClassTwoTest" />
+        </classes>
+    </test>
+    <test name="SimpleTest">
+        <classes>
+            <class name="com.demo.SimpleTest" />
+        </classes>
+    </test>
+</suite>
