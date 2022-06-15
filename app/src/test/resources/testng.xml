@@ -19,6 +19,11 @@
             <class name="com.demo.ClassTwoTest" />
         </classes>
     </test>
+    <test name="ClassThreeTest">
+        <classes>
+            <class name="com.demo.ClassThreeTest" />
+        </classes>
+    </test>
     <test name="SimpleTest">
         <classes>
             <class name="com.demo.SimpleTest" />
